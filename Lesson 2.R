@@ -85,6 +85,14 @@ A;B
 rowMeans(A)
 colMeans(B)
 
+# Matrix row and column extraction
+A
+c1 <- A[,c(2,4,5)]
+c1
+c2 <- A[c(1,3:5),]
+c2
+
+
 #Logarithms
 log10(8.2)
 log(8.2,10)
@@ -95,3 +103,11 @@ log(8.2,exp(1))
 #Exponential
 exp(8.2)
 exp(1)
+
+View(iris)
+names(iris)
+myNewdata <- as.data.frame(cbind(iris$Petal.Length,iris$Species))
+View(myNewdata)
+names(myNewdata) <- c("PetalLength","Species")
+
+

@@ -1,0 +1,18 @@
+---
+title: "1 ANNOUCEMENTS 2023 BAS SPS 2347 CLASS MARKS"
+author: "JOSEPH KAROMO"
+date: "2023-09-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## CLASS ANNOUCEMENTS
+. 
+
+
+## CLASS MARKS
+1. 12209 - 5
+
