@@ -2,7 +2,7 @@
 #For downloading data use the link
 #https://finance.yahoo.com/?guccounter=1
 
-setwd("E:\\TF WORK\\CLASS WORKLOAD\\SEM 1\\SEP 2022\\SPII")
+setwd("E:\\GIT PROJECT REP\\2023 PROGRAMMING CLASSES\\2023_BAS_Y3_SPII_SPS_2347")
 library(readxl)
 library(quantmod)
 library(xts)#xts-extensile time series
@@ -22,9 +22,10 @@ acf(ts1_AR)
 pacf(ts1_AR) #lag 2 is significant
 
 ## Simulate MA models
+ts_AR=arima.sim(n=100,list(ar=-0.8,mean=18))
 ts_MA=arima.sim(n=100,list(ma=-0.8,mean=18))
 ts1_MA=arima.sim(n=100,list(ma=c(0.3,0.7),mean=8))
-par(mfrow=c(1,3))
+par(mfrow=c(2,3))
 plot(ts_MA)
 acf(ts_MA); pacf(ts_MA)
 plot(ts1_MA)
@@ -61,7 +62,7 @@ names(data.AMZN)
 names(data.AMZN)<-paste(c("AMZN.Open","AMZN.High","AMZN.Low","AMZN.Close","AMZN.Adj.Close","AMZN."))
 head(data.AMZN)
 #alternative download
-plot(data.AMZN$Close)
+plot(data.AMZN$AMZN.Close)
 dim(data.AMZN)
 #checking dimensions
 summary(data.AMZN)
