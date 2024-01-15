@@ -13,3 +13,5 @@ quizfre <- as.data.frame(cbind(quiz,probs))
 sample(quiz, size = 1, replace = TRUE, prob = probs)
 
 #==============================================================================
+
+
